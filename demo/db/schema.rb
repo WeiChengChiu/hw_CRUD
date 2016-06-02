@@ -11,14 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160602012648) do
+ActiveRecord::Schema.define(version: 20160602041202) do
 
-  create_table "people", force: :cascade do |t|
+  create_table "events", force: :cascade do |t|
     t.string   "name"
-    t.text     "bio"
-    t.date     "birthday"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.text     "description"
+    t.boolean  "is_pu_blic"
+    t.integer  "capacity"
+    t.string   "foobar"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.string   "status"
   end
 
 end
